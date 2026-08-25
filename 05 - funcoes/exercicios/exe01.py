@@ -34,3 +34,4 @@ print(f'A subtracao dos valores foi de: {subtracao}')
 print(f'A divisao dos valores foi de: {divisao}')
 print(f'A multiplicacao dos valores foi de: {multiplicacao}')
 print(saudar)
+
