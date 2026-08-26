@@ -59,3 +59,10 @@ for i in pessoa.values():
 for t in turma:
     # pegando todos os nomes
     print(t['nome'])
+
+
+produtos = {
+    "produto": "teclado",
+    "categoria":'Informática',
+    "preco": 300
+}

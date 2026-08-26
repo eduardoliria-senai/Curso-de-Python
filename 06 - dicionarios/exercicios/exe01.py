@@ -20,4 +20,11 @@ produtos = [
         "preco": 67
     },
 ]
+
 # somar todos os valores dos produtos. 
+soma = 0
+for p in produtos:
+    precos = p['preco']
+    soma += precos
+
+print(f'A soma total dos produtos foi de R$ {soma}')
