@@ -164,8 +164,14 @@ def produto_mais_barato(produtos):
     print(f'Categoria: {mais_barato['categoria']}')
 
 # Calcular o estoque
-# def calcular_estoque(produtos):
+def calcular_estoque(produtos):
+    total = 0
 
+    for produto in produtos:
+        estoque = produto['preco'] * produto['quantidade']
+        total += estoque
+
+    print(f'\nValor total do estoque: R$ {total:.2f}')
 
 def menu():
     print('\n ==== Escolha as opcoes abaixo ====')
@@ -204,4 +210,9 @@ while True:
     elif opcao == 8:
         filtra_fornecedor(produtos)
     elif opcao == 9:
+        calcular_estoque(produtos)
+    elif opcao == 10:
+        print('Saindo...')
         break
+    else:
+        print('Opção inexistente')
